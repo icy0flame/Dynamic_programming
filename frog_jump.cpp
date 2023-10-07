@@ -1,5 +1,5 @@
 // TIME complexity of below both code is O(n)
-//SPACE COMPLEXITY of below code is O(1)
+//SPACE COMPLEXITY of below code is O(n) +O(n)  stack space of recursion and dynamic array
 
 #include <iostream>
 #include<vector>
@@ -38,8 +38,7 @@ int main()
   
 }
 
-// below code do it in space complexity O(1)
-
+//SPACE COMPLEXITY of below code is O(n)   dynamic array
 #include <iostream>
 #include<vector>
 #include <cmath>
