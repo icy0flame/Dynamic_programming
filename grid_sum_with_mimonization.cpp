@@ -7,10 +7,11 @@ int all_ways(int end_row,int end_column,vector<vector<int>> arr,vector<vector<in
     if(end_column==0&&end_row==0)return 1;
     if(end_column<0||end_row<0) return 0;
     if(dp[end_row][end_column]!=-1)return dp[end_row][end_column];
+    else{
     int right=all_ways(end_row,end_column-1,arr,dp);
     int down=all_ways(end_row-1,end_column,arr,dp);
     return dp[end_row][end_column]=right+down;
-}
+}}
 int main(){
     int n,m;
     cout<<"enter the number of rows : ";
